@@ -18,7 +18,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: domains/api.geheimesite.nl/public_html/
-          local-dir: .
           exclude: |
             connection_example.php
             **/**/*.md
