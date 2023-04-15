@@ -19,5 +19,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: domains/api.geheimesite.nl/public_html/
           exclude: |
+            .gitignore
+            .git
+            .github
             connection_example.php
             **/**/*.md
