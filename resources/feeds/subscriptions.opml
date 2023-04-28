@@ -37,8 +37,6 @@ This page was inspired by petermolnar.net
 			<outline title="N-O-D-E" text="N-O-D-E" type="feed"
 				xmlUrl="https://n-o-d-e.net/rss/rss.xml" htmlUrl="https://n-o-d-e.net"
 				url="https://n-o-d-e.net/rss/rss.xml"></outline>
-			<outline title="ꟿirage" text="Inhji" type="feed" xmlUrl="https://inhji.de/follow/home"
-				htmlUrl="https://inhji.de" url="https://inhji.de/follow/home"></outline>
 			<outline title="Tom MacWright" text="Tom MacWright" type="feed"
 				xmlUrl="https://macwright.com/rss.xml" htmlUrl="https://macwright.com"
 				url="https://macwright.com/rss.xml"></outline>
@@ -173,9 +171,6 @@ This page was inspired by petermolnar.net
 				url="https://kornel.ski/pornelski.atom"></outline>
 			<outline title="p83" text="publog" type="feed" xmlUrl="https://p83.nl/rss"
 				htmlUrl="https://p83.nl" url="https://p83.nl/rss"></outline>
-			<outline title="Peter Stuifzand" text="Peter Stuifzand" type="feed"
-				xmlUrl="https://peterstuifzand.nl/rss.xml" htmlUrl="https://peterstuifzand.nl"
-				url="https://peterstuifzand.nl/rss.xml"></outline>
 			<outline title="Bryce Wray" text="Bryce Wray" type="feed"
 				xmlUrl="https://www.brycewray.com/index.xml" htmlUrl="https://www.brycewray.com"
 				url="https://www.brycewray.com/index.xml"></outline>
@@ -185,8 +180,8 @@ This page was inspired by petermolnar.net
 				xmlUrl="https://vyshnav.xyz/feed.xml" htmlUrl="/https://vyshnav.xyz"
 				url="https://vyshnav.xyz/feed.xml"></outline>
 			<outline title="Lynn Fisher" text="Lynn and tonic" type="feed"
-				xmlUrl="https://lynnandtonicblog.com/feed/" htmlUrl="https://lynnandtonicblog.com"
-				url="https://lynnandtonicblog.com/feed/"></outline>
+				xmlUrl="https://lynnandtonicblog.com/feed/feed.xml" htmlUrl="https://lynnandtonicblog.com"
+				url="https://lynnandtonicblog.com/feed/feed.xml"></outline>
 		</outline>
 		<outline text="👻 Open-source" title="👻 Open-source" type="folder">
 			<outline title="ElementaryOS" text="ElementaryOS" type="feed"
@@ -205,9 +200,6 @@ This page was inspired by petermolnar.net
 				xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCx4li1iMygs5KtqgcU5KGRw"
 				htmlUrl="https://www.youtube.com/channel/UCx4li1iMygs5KtqgcU5KGRw"
 				url="https://www.youtube.com/feeds/videos.xml?channel_id=UCx4li1iMygs5KtqgcU5KGRw"></outline>
-			<outline title="[Micro.blog] Robijntje" text="my micro.blog account" type="feed"
-				xmlUrl="https://micro.blog/posts/Robijntje" htmlUrl="https://micro.blog/Robijntje"
-				url="https://micro.blog/posts/Robijntje"></outline>
 			<outline title="Robijntje’s microblog" text="my neolog (microblog)" type="feed"
 				xmlUrl="https://micro.geheimesite.nl/feed" htmlUrl="https://micro.geheimesite.nl"
 				url="https://micro.geheimesite.nl/feed"></outline>
