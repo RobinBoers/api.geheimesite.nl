@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://geheimesite.nl/assets/xsl/opml.xsl"?>
 <!-- 
 Hi!
+
+These are the RSS feeds I follow. You can use this code to for example import them in an RSS
+reader.
 
 If you're reading this you're browser probably can't render the page correctly. Try using Firefox
 instead, unless you wanted to see the source code.
