@@ -36,4 +36,3 @@
             echo json_encode("Succes.");
         }
     }
-?> 
