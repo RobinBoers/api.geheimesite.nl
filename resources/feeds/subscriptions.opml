@@ -22,8 +22,11 @@ This page was inspired by petermolnar.net
 		<outline text="🏡 Home" title="🏡 Home" type="folder">
 			<outline title="Anomalily" text="The internet home of Lillian Karabaic" type="feed"
 				xmlUrl="http://anomalily.net/feed/" htmlUrl="http://anomalily.net"
-                url="http://anomalily.net/feed/"></outline>
-            <outline title="Josh Comeau" text="Josh Comeau" type="feed"
+				url="http://anomalily.net/feed/"></outline>
+			<outline title="Eevee" text="fuzzy notepad" type="feed"
+				xmlUrl="https://eev.ee/feeds/rss.xml" htmlUrl="https://eev.ee"
+				url="https://eev.ee/feeds/rss.xml"></outline>
+			<outline title="Josh Comeau" text="Josh Comeau" type="feed"
 				xmlUrl="https://www.joshwcomeau.com/rss.xml" htmlUrl="https://www.joshwcomeau.com"
 				url="https://www.joshwcomeau.com/rss.xml"></outline>
 			<outline title="PhotoGabble"
@@ -79,11 +82,11 @@ This page was inspired by petermolnar.net
 				url="https://shkspr.mobi/blog/feed/atom/"></outline>
 		</outline>
 		<outline text="💻 Coding" title="💻 Coding" type="folder">
-            <outline title="CSS { In Real Life }" text="CSS { In Real Life }" type="feed"
+			<outline title="CSS { In Real Life }" text="CSS { In Real Life }" type="feed"
 				xmlUrl="https://css-irl.info/rss.xml"
 				htmlUrl="https://css-irl.info"
-                url="https://css-irl.info/rss.xml"></outline>
-            <outline title="Herman's blog" text="ᕕ( ᐛ )ᕗ" type="feed"
+				url="https://css-irl.info/rss.xml"></outline>
+			<outline title="Herman's blog" text="ᕕ( ᐛ )ᕗ" type="feed"
 				xmlUrl="https://herman.bearblog.dev/feed/?type=rss"
 				htmlUrl="https://herman.bearblog.dev"
 				url="https://herman.bearblog.dev/feed/?type=rss"></outline>
@@ -180,7 +183,8 @@ This page was inspired by petermolnar.net
 				xmlUrl="https://vyshnav.xyz/feed.xml" htmlUrl="/https://vyshnav.xyz"
 				url="https://vyshnav.xyz/feed.xml"></outline>
 			<outline title="Lynn Fisher" text="Lynn and tonic" type="feed"
-				xmlUrl="https://lynnandtonicblog.com/feed/feed.xml" htmlUrl="https://lynnandtonicblog.com"
+				xmlUrl="https://lynnandtonicblog.com/feed/feed.xml"
+				htmlUrl="https://lynnandtonicblog.com"
 				url="https://lynnandtonicblog.com/feed/feed.xml"></outline>
 		</outline>
 		<outline text="👻 Open-source" title="👻 Open-source" type="folder">
