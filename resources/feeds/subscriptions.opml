@@ -20,6 +20,9 @@ This page was inspired by petermolnar.net
 	</head>
 	<body>
 		<outline text="🏡 Home" title="🏡 Home" type="folder">
+			<outline title="Hailey :D" text="When world collide" type="feed"
+				xmlUrl="https://locke-and-key.github.io/feed/index.xml" htmlUrl="https://locke-and-key.github.io"
+				url="https://locke-and-key.github.io/feed/index.xml"></outline>
 			<outline title="Anomalily" text="The internet home of Lillian Karabaic" type="feed"
 				xmlUrl="http://anomalily.net/feed/" htmlUrl="http://anomalily.net"
 				url="http://anomalily.net/feed/"></outline>
