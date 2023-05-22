@@ -6,6 +6,12 @@
             "type": "collection",
             "items": [
                 {
+                    "title": "Name of the Wind",
+                    "author": "Patrick Rothfuss",
+                    "cover": "name-of-the-wind.jpg",
+                    "url": "https://www.bibliotheek.nl/catalogus/titel.302329323.html/the-name-of-the-wind/"
+                },
+                {
                     "title": "Wij zijn ons brein",
                     "author": "Dick Swaab",
                     "cover": "wij-zijn-ons-brein.jpg",
