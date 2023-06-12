@@ -68,6 +68,10 @@ This page was inspired by petermolnar.net
 				xmlUrl="https://jokessterrenkruid.blogspot.com/feeds/posts/default"
 				htmlUrl="https://jokessterrenkruid.blogspot.com"
 				url="https://jokessterrenkruid.blogspot.com/feeds/posts/default"></outline>
+			<outline title="JustJuggelingWithLife" text="Een blog van een random tiener uit Nederland die het leven langzaam aan 't ontdekken is" type="feed"
+				xmlUrl="https://juggelingwithlife.blogspot.com/feeds/posts/default"
+				htmlUrl="https://juggelingwithlife.blogspot.com"
+				url="https://juggelingwithlife.blogspot.com/feeds/posts/default"></outline>
 			<outline title="WitBlauw" text="WitBlauw" type="feed"
 				xmlUrl="https://witblauw.blogspot.com/feeds/posts/default"
 				htmlUrl="https://witblauw.blogspot.com"
