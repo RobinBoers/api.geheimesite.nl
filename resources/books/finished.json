@@ -6,6 +6,12 @@
             "type": "collection",
             "items": [
                 {
+                    "title": "Vallen",
+                    "author": "Anne Provoost",
+                    "cover": "vallen.jpg",
+                    "url": "https://www.jeugdbibliotheek.nl/catalogus/titel.381329739.html/vallen/"
+                },
+                {
                     "title": "Name of the Wind",
                     "author": "Patrick Rothfuss",
                     "cover": "name-of-the-wind.jpg",
