@@ -95,9 +95,9 @@ This page was inspired by petermolnar.net
 				htmlUrl="https://css-irl.info"
 				url="https://css-irl.info/rss.xml"></outline>
 			<outline title="Herman's blog" text="ᕕ( ᐛ )ᕗ" type="feed"
-				xmlUrl="https://herman.bearblog.dev/feed/?type=rss"
+        xmlUrl="https://herman.bearblog.dev/feed/"
 				htmlUrl="https://herman.bearblog.dev"
-				url="https://herman.bearblog.dev/feed/?type=rss"></outline>
+				url="https://herman.bearblog.dev/feed/"></outline>
 			<outline title="ahwx's blog" text="ahwx's blog" type="feed"
 				xmlUrl="https://blog.ahwx.org/rss"
 				htmlUrl="https://blog.ahwx.org"
