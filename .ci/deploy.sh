@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env fish
 # Bix handler to deploy :)
 
-phploy
+rsync -ciavuz --exclude-from=.deployignore --delete . geheimesite.nl:domains/api.geheimesite.nl/public_html
+

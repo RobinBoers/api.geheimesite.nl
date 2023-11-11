@@ -1,0 +1,10 @@
+.git
+.ci
+.deployignore
+**/*.md
+*.ini
+*_example.php
+**/*_example.php
+.ci/**.sh
+connection.php
+**/token.php
