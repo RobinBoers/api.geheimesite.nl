@@ -6,6 +6,36 @@
             "type": "collection",
             "items": [
                 {
+                    "title": "Silicon Values",
+                    "author": "Jillian C. York",
+                    "cover": "silicon-values.jpg",
+                    "url": "https://www.bibliotheek.nl/catalogus/titel.434349259.html/siege-and-storm/"
+                },
+                {
+                    "title": "Siege and Storm",
+                    "author": "Leigh Bardugo",
+                    "cover": "ruin-and-rising.jpg",
+                    "url": "https://www.bibliotheek.nl/catalogus/titel.434349259.html/siege-and-storm/"
+                },
+                {
+                    "title": "Ruin and Rising",
+                    "author": "Leigh Bardugo",
+                    "cover": "ruin-and-rising.jpg",
+                    "url": "https://www.bibliotheek.nl/catalogus/titel.439289092.html/ruin-and-rising/"
+                },
+                {
+                    "title": "Ruin and Rising",
+                    "author": "Leigh Bardugo",
+                    "cover": "ruin-and-rising.jpg",
+                    "url": "https://www.bibliotheek.nl/catalogus/titel.439289092.html/ruin-and-rising/"
+                },
+                {
+                    "title": "Shadown and Bone",
+                    "author": "Leigh Bardugo",
+                    "cover": "shadow-and-bone.jpg",
+                    "url": "https://www.bibliotheek.nl/catalogus/titel.439289122.html/shadow-and-bone/"
+                },
+                {
                     "title": "The Wise Man's Fear",
                     "author": "Patrick Rothfuss",
                     "cover": "wise-mans-fear.jpg",

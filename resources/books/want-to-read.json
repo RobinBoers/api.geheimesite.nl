@@ -3,16 +3,52 @@
     "type": "collection",
     "items": [
         {
-            "title": "The Phoenix Project",
-            "author": "Gene Kim",
-            "cover": "phoenix-project.jpg",
-            "url": "https://www.bibliotheek.nl/catalogus/titel.343555220.html/de-deeltjesdierentuin/"
+            "title": "Fabelachtige getallen en waar ze te vinden",
+            "author": "Antonio Padilla",
+            "cover": "fabelachtige-getallen.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.436324148.html/fabelachtige-getallen-en-waar-ze-te-vinden/"
+        },
+        {
+            "title": "Spelen met oneindigheid",
+            "author": "Hans Zantema",
+            "cover": "oneindigheid.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.437442713.html/spelen-met-oneindigheid/"
+        },
+        {
+            "title": "Neon Gods",
+            "author": "Katee Robert",
+            "cover": "neon-gods.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.437074439.html/neon-gods/"
+        },
+        {
+            "title": "Things I Wanted To Say (but never did)",
+            "author": "Monica Murphy",
+            "cover": "things-i-wanted-to-say.jpg",
+            "url": "https://www.bol.com/nl/nl/p/things-i-wanted-to-say/9300000132785836/"
+        },
+        {
+            "title": "Remember Me Gone",
+            "author": "Stacy Stokes",
+            "cover": "remember-me-gone.jpg",
+            "url": "https://www.bol.com/nl/nl/f/remember-me-gone/9300000042717416/"
         },
         {
             "title": "Cult of the Dead Cow",
             "author": "Joseph Menn",
             "cover": "cult-of-the-dead-cow.jpg",
             "url": "https://www.bol.com/be/nl/p/cult-of-the-dead-cow/9200000100329422/"
+        },
+        {
+            "title": "Digital Gremlins",
+            "author": "Rens van der Vorst",
+            "cover": "digital-gremlins.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.43829761X.html/digitale-gremlins/"
+        }
+        {
+            "title": "The Age of Surveillance Capatalism",
+            "author": "Shoshana Zuboff",
+            "cover": "surveillance-capitalism.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.423670433.html/the-age-of-surveillance-capitalism/"
         },
         {
             "title": "De waarheid over macht",
@@ -25,6 +61,12 @@
             "author": "Robert Cialdini",
             "cover": "invloed.jpg",
             "url": "https://www.bibliotheek.nl/catalogus/titel.433391464.html/invloed/"
-        }        
+        },
+        {
+            "title": "The Phoenix Project",
+            "author": "Gene Kim",
+            "cover": "phoenix-project.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.343555220.html/de-deeltjesdierentuin/"
+        }      
     ]
 }

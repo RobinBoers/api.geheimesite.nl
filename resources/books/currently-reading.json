@@ -2,5 +2,11 @@
     "title": "Currently reading",
     "type": "collection",
     "items": [
+        {
+            "title": "Sokrates' leven en dood",
+            "author": "Plato",
+            "cover": "plato.jpg",
+            "url": "https://www.bibliotheek.nl/catalogus/titel.424535742.html/sokrates--leven-en-dood/"
+        }
     ]
 }
