@@ -4,6 +4,4 @@ This is not really an API, but just a mail-a-form script that I reuse on multipl
 
 ## Usage
 
-```api
-POST /contact/form
-```
+    POST /contact/form

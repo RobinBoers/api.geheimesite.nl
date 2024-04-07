@@ -1,5 +1,4 @@
 .git
-.ci
 .deployignore
 **/*.md
 *.ini
@@ -8,3 +7,4 @@
 .ci/**.sh
 connection.php
 **/token.php
+Bakefile

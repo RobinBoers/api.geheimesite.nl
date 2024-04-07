@@ -8,8 +8,8 @@ The token itself is stored in `token.php` which looks like this:
 
 ```php
 <?php
-    $token = "3938D29DCAE2E6A7B2E0"
-?>
+
+$token = "3938D29DCAE2E6A7B2E0"
 ```
 
 _This is an revoked token, don't bother trying to use it :joy:_

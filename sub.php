@@ -4,12 +4,11 @@
 # Sub—a simple email subscription service for my blog.
 #
 
-$API_HOST = "https://api.geheimesite.nl";
+include "config.php";
+
 $API_ROOT = "/sub";
 $TOKEN = "../token.txt";
 $LIST = "../subscribers.csv";
-$PUBLIC_EMAIL = "noreply@roblog.nl";
-$PRIVATE_EMAIL = "webmaster@roblog.nl";
 
 if(!file_exists($LIST)) {
   touch($LIST);
