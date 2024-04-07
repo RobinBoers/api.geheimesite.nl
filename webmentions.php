@@ -5,7 +5,6 @@
 #
 
 include "config.php";
-include "connection.php";
 
 $API_ROOT = "/webmentions";
 
@@ -38,7 +37,7 @@ if (!stristr($source, $_POST['target'])) {
 
 $headers = "From: " . $PUBLIC_EMAIL;
 $subject = "Hooray! New webmention on <" . $_POST['source'] . ">";
-$message = "Your page <" . $_POST['target'] . "> was mentioned in <" . $_POST['source'] . ">." . "\n\r" . 
+$message = "Your page <" . $_POST['target'] . "> was mentioned on <" . $_POST['source'] . ">." . "\n\r" . 
   "I guess you're not that unpopular after all (yay!)";
 
 mail($PRIVATE_EMAIL, $subject, $message, $headers);
