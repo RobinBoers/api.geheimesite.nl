@@ -29,11 +29,13 @@ curl_close($ch);
 $source = ob_get_contents();
 ob_end_clean();
 
-header($_SERVER['SERVER_PROTOCOL'] . ' 202 Accepted');
-
 if (!stristr($source, $_POST['target'])) {
+  header($_SERVER['SERVER_PROTOCOL'] . ' 400 Bad Request');
+  echo "Your page doesn't actually mention mine.";
   exit;
 }
+
+header($_SERVER['SERVER_PROTOCOL'] . ' 202 Accepted');
 
 $headers = "From: " . $PUBLIC_EMAIL;
 $subject = "Hooray! New webmention on <" . $_POST['source'] . ">";
