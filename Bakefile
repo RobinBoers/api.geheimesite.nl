@@ -3,7 +3,7 @@
 REMOTE="s11"
 DOMAIN="api.geheimesite.nl"
 
-DEPLOY="rsync -ciavuz --delete --exclude-from=.deployignore"
+DEPLOY="$DEPLOY --exclude-from=.deployignore"
 
 deploy() {
   $DEPLOY . $REMOTE:domains/$DOMAIN/public_html
