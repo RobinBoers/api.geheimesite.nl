@@ -96,7 +96,7 @@ function fmtTime(ms) {
 
 // Kickstart the player.
 if (stored) loadSong();
-else pullSong();
+pullSong();
 
 // If something gets stuck this should correct it.
 window.setInterval(() => {
