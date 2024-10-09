@@ -49,9 +49,22 @@ function saveProgress() {
   localStorage.setItem("data", JSON.stringify(data));
 }
 
+function normalize(n) {
+  return n
+    .normalize("NFKD")
+    .replace(/[^\w\s]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function are_equal(n1, n2) {
+  return normalize(n1) == normalize(n2);
+}
+
 function renderSong() {
   if (data.playing) {
-    if(data.track == data.album) {
+    if (are_equal(data.track, data.album)) {
       song.innerHTML = `
         <cite class="track">${data.track}</cite> 
         by <span class="artists">${data.artists.join(", ")}</span>
@@ -82,7 +95,7 @@ function fmtTime(ms) {
 }
 
 // Kickstart the player.
-if(stored) loadSong();
+if (stored) loadSong();
 else pullSong();
 
 // If something gets stuck this should correct it.
