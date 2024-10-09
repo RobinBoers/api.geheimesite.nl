@@ -113,6 +113,31 @@ function serve_error_response($response) {
   ]));
 }
 
+function clean_album_name($name) {
+  $bullshit = [
+      '\d{4} remastered',
+      'remastered \d{4}',
+      'remastered',
+      'limited edition',
+      'special edition',
+      'deluxe edition',
+      'bonus tracks?',
+      'expanded edition',
+      'anniversary edition',
+      'exclusive',
+      'feat\.',
+      'featuring',
+      'digital remaster',
+      'reissue',
+      '\(\d{4} reissue\)',
+      '\[.*?\]',
+      '\(.*?\)',
+  ];
+
+  $pattern = '/' . implode('|', $bullshit) . '/i';
+  return trim(preg_replace('/\s+/', ' ', preg_replace($pattern, '', $name)));
+}
+
 // Obtain access token
 
 $headers = [
@@ -146,7 +171,7 @@ $data = parse_json($response);
 echo json_encode([
   'playing' => $data['is_playing'],
   'track' => $data['item']['name'],
-  'album' => $data['item']['album']['name'],
+  'album' => clean_album_name($data['item']['album']['name']),
   'artists' => array_map(fn($artist) => $artist['name'], $data['item']['artists']),
   'url' => $data['item']['external_urls']['spotify'],
   'duration' => $data['item']['duration_ms'],
