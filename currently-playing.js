@@ -2,7 +2,9 @@ const ENDPOINT = "https://api.geheimesite.nl/currently-playing";
 const FPS = 100;
 
 let none = { playing: false };
-let data = { playing: false };
+
+let stored = localStorage.getItem("data");
+let data = stored ? JSON.parse(stored) : none;
 
 let pulling = false;
 let watcher;
@@ -18,21 +20,33 @@ async function pullSong() {
   if (response.status >= 400) data = none;
   else data = await response.json();
 
+  loadSong();
+  saveProgress();
+
+  pulling = false;
+}
+
+function loadSong() {
   if (watcher) window.clearInterval(watcher);
   if (data.playing) mountWatcher();
 
   renderSong();
-  pulling = false;
 }
 
 function mountWatcher() {
   watcher = window.setInterval(() => {
     data.progress += FPS;
+    saveProgress();
+
     renderSong();
 
     let finished = data.progress > data.duration;
     if (finished && !pulling) pullSong();
   }, FPS);
+}
+
+function saveProgress() {
+  localStorage.setItem("data", JSON.stringify(data));
 }
 
 function renderSong() {
@@ -68,7 +82,8 @@ function fmtTime(ms) {
 }
 
 // Kickstart the player.
-pullSong();
+if(stored) loadSong();
+else pullSong();
 
 // If something gets stuck this should correct it.
 window.setInterval(() => {
