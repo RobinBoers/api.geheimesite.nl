@@ -3,6 +3,18 @@
 // Public API to retrieve song data for currently playing song
 // from the Spotify API.
 
+// To generate the refresh token:
+//
+// 1. Visit https://accounts.spotify.com/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=http://localhost:4000
+//
+// 2. Copy the `code` parameter from the URL, and run the following command:
+//
+//    curl -X POST https://accounts.spotify.com/api/token \
+//      -H "Authorization: Basic $(echo -n "CLIENT_ID:CLIENT_SECRET" | base64)" \
+//      -d "grant_type=authorization_code" \
+//      -d "code=CODE" \
+//      -d "redirect_uri=http://localhost:4000"
+
 header('Content-Type: application/json; charset=utf-8');
 
 $CLIENT_ID = '';
