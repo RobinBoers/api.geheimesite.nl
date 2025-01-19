@@ -5,7 +5,7 @@
 
 // To generate the refresh token:
 //
-// 1. Visit https://accounts.spotify.com/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=http://localhost:4000
+// 1. Visit https://accounts.spotify.com/authorize?response_type=code&client_id=CLIENT_ID&scope=user-read-currently-playing&redirect_uri=http://localhost:4000
 //
 // 2. Copy the `code` parameter from the URL, and run the following command:
 //
