@@ -8,9 +8,8 @@ header('Access-Control-Allow-Origin: *');
 
 define('STORE', __DIR__ . "/score.txt");
 
-if(isset($_POST['hs'])) {
+function maybe_write_new($new_highscore) {
   $old_highscore = file_get_contents(STORE);
-  $new_highscore = $_POST['hs'];
 
   if($old_highscore < $new_highscore) {
     file_put_contents(STORE, $new_highscore);
@@ -21,5 +20,8 @@ if(isset($_POST['hs'])) {
     exit;
   }
 }
+
+if(isset($_POST['hs'])) maybe_write_new($_POST['hs']);
+elseif(isset($_GET['hs'])) maybe_write_new($_GET['hs']);
 
 http_response_code(400);
