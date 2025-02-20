@@ -4,8 +4,6 @@
 # Storing and updating high scores in the {du}punkto Kodo game.
 #
 
-header('Access-Control-Allow-Origin: *');
-
 define('STORE', __DIR__ . "/score.txt");
 
 function maybe_write_new($new_highscore) {
