@@ -1,0 +1,8 @@
+name: api.geheimesite.nl
+type: static
+host: nov
+src: .
+exclude:
+- resources/README.md
+- resources/book.md
+- resources/media.md

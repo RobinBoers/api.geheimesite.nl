@@ -1,10 +1,9 @@
 #!/bin/bash
 
-REMOTE="s11"
-DOMAIN="api.geheimesite.nl"
-
-DEPLOY="$DEPLOY --exclude-from=.deployignore"
+serve() {
+  waiter --dev
+}
 
 deploy() {
-  $DEPLOY . $REMOTE:domains/$DOMAIN/public_html
+  lift deploy
 }
