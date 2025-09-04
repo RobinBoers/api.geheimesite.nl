@@ -35,13 +35,14 @@ function renderListens() {
   }
 
   container.innerHTML = `
-    <div class="top-artists-section">
-      <h2>Top Artists</h2>
-      ${renderTopArtists()}
-    </div>
-    <div class="recents-section">
-      <h2>Recent Listens</h2>
+    <div class="lb-section lb-recents">
+      <h3>Recent listens</h3>
       ${renderRecentListens()}
+    </div>
+
+    <div class="lb-section lb-top-artists">
+      <h3>Top artists</h3>
+      ${renderTopArtists()}
     </div>
   `;
 }
@@ -51,14 +52,14 @@ function renderTopArtists() {
   if (!data.top_artists || data.top_artists.length == 0) return '<div class="empty">No artist data available.</div>';
 
   return `
-    <div class="artists-grid">
+    <div class="lb-row">
       ${data.top_artists.map((artist, index) => `
-        <div class="artist-card">
-          <div class="artist-rank">#${index + 1}</div>
-          <img src="${artist.profile_picture}" alt="${artist.name}" class="artist-image" />
-          <div class="artist-info">
-            <div class="artist-name">${artist.name}</div>
-            <div class="play-count">${artist.listen_count} plays</div>
+        <div class="lb-card lb-artist">
+          <div class="lb-rank">${index + 1}</div>
+          <img src="${artist.profile_picture}" alt="" />
+          <div class="lb-info">
+            <div class="lb-card-title">${artist.name}</div>
+            <div class="lb-card-subtitle">${artist.listen_count} plays</div>
           </div>
         </div>
       `).join('')}
@@ -72,15 +73,15 @@ function renderRecentListens() {
     const artists = listen.artists.join(', ');
     
     return `
-      <div class="listen-item">
-        <div class="listen-main">
+      <div class="lb-listen">
+        <div class="lb-song">
           <cite class="track">${listen.track}</cite>
-          ${listen.track !== listen.album ? `from <cite class="album">${listen.album}</cite>` : ''}
+          ${listen.track != listen.album ? `from <cite class="album">${listen.album}</cite>` : ''}
           by <span class="artists">${artists}</span>
         </div>
-        <div class="listen-meta">
-          <span class="listen-time">${timeAgo}</span>
-          ${listen.url ? `<a href="${listen.url}" class="spotify-link" target="_blank" rel="noopener">♫</a>` : ''}
+        <div class="lb-meta">
+          <span class="lb-time">${timeAgo}</span>
+          ${listen.url ? `<a href="${listen.url}" class="lb-button" target="_blank" rel="noopener">♫</a>` : ''}
         </div>
       </div>
     `;
