@@ -3,7 +3,7 @@ const FPS = 100;
 
 let none = { playing: false };
 
-let stored = localStorage.getItem("data");
+let stored = localStorage.getItem("song-data");
 let data = stored ? JSON.parse(stored) : none;
 
 let pulling = false;
@@ -46,7 +46,7 @@ function mountWatcher() {
 }
 
 function saveProgress() {
-  localStorage.setItem("data", JSON.stringify(data));
+  localStorage.setItem("song-data", JSON.stringify(data));
 }
 
 function normalize(n) {
