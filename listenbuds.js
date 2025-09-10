@@ -101,8 +101,3 @@ function formatTimeAgo(timestamp) {
 
 if (stored) renderListens();
 pullListens();
-
-// Pull again every 10 seconds.
-window.setInterval(() => {
-  if (!pulling) pullListens();
-}, 10000);
