@@ -58,8 +58,8 @@ function renderTopArtists() {
           <div class="lb-rank">${index + 1}</div>
           <img src="${artist.profile_picture}" alt="" />
           <div class="lb-info">
-            <div class="lb-card-title">${artist.name}</div>
-            <div class="lb-card-subtitle">${artist.listen_count} plays</div>
+            <div class="title">${artist.name}</div>
+            <div class="subtitle">${artist.listen_count} plays</div>
           </div>
         </div>
       `).join('')}
@@ -76,8 +76,8 @@ function renderRecentListens() {
       <div class="lb-listen">
         <div class="lb-song">
           <cite class="track">${listen.track}</cite>
-          ${listen.track != listen.album ? `from <cite class="album">${listen.album}</cite>` : ''}
-          by <span class="artists">${artists}</span>
+          ${listen.track != listen.album ? `<cite class="album">${listen.album}</cite>` : ''}
+          <span class="artists">${artists}</span>
         </div>
         <div class="lb-meta">
           <span class="lb-time">${timeAgo}</span>
