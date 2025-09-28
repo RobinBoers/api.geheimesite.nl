@@ -76,7 +76,7 @@ function renderRecentListens() {
       <div class="lb-listen">
         <div class="lb-song">
           <cite class="track">${listen.track}</cite>
-          ${listen.track != listen.album ? `<cite class="album">${listen.album}</cite>` : ''}
+          ${!are_equal(listen.track, listen.album) ? `<cite class="album">${listen.album}</cite>` : ''}
           <span class="artists">${artists}</span>
         </div>
         <div class="lb-meta">
@@ -86,6 +86,20 @@ function renderRecentListens() {
       </div>
     `;
   }).join('');
+}
+
+function are_equal(n1, n2) {
+  return normalize(n1) == normalize(n2);
+}
+
+function normalize(str) {
+  if(!str) return "";
+
+  return str.normalize("NFKC")        // normalize Unicode
+    .replace(/[^\w\s]/g, "")          // strips all punctuation  
+    .replace(/\s+/g, " ")             // collapses multiple spaces into one  
+    .trim()
+    .toLowerCase();
 }
 
 function formatTimeAgo(timestamp) {

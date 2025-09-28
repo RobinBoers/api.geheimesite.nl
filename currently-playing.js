@@ -49,17 +49,18 @@ function saveProgress() {
   localStorage.setItem("song-data", JSON.stringify(data));
 }
 
-function normalize(n) {
-  return n
-    .normalize("NFKD")
-    .replace(/[^\w\s]/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
-}
-
 function are_equal(n1, n2) {
   return normalize(n1) == normalize(n2);
+}
+
+function normalize(str) {
+  if(!str) return "";
+
+  return str.normalize("NFKC")        // normalize Unicode
+    .replace(/[^\w\s]/g, "")          // strips all punctuation  
+    .replace(/\s+/g, " ")             // collapses multiple spaces into one  
+    .trim()
+    .toLowerCase();
 }
 
 function renderSong() {
